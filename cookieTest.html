@@ -1,0 +1,16 @@
+<html>
+<p>This is simple HTML for testing cookie</p>
+<a><b>I found the following cookies at this origin</b></a>
+<div id="cookie-value">fuuuuu</div>
+<br>
+<button onclick="alertCookie()">Show cookies</button>
+<a href="https://developer.mozilla.org/ja/docs/Web/API/Document/cookie#example">Reference : This Mozilla Site</a>
+<script>
+    function alertCookie() {
+        alert(document.cookie);
+    }
+    const elm = document.getElementById('cookie-value');
+    elm.textContent =document.cookie;
+</script>
+
+</html>
